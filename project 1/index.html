@@ -5,37 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>HTML FORM</title>
+    <title>HTML Form</title>
 </head>
 <body>
     <div class="container">
         <form id="form" class="form">
-        <h2>Sign Up</h2>
-        <div class="form-control">
-            <label for="Username">Username</label>
-            <input type="text" id="Username" placeholder="Enter Username">
-            <small>Error Message</small>
-        </div> 
-        <div class="form-control">
-            <label for="Email">Email</label>
-            <input type="text" id="Email" placeholder="Enter Email  ">
-            <small>Error Message</small>
-        </div>
-        <div class="form-control">
-            <label for="Password">Password</label>
-            <input type="password" id="Password" placeholder="Enter Password  ">
-            <small>Error Message</small>
-        </div>
-        <div class="form-control">
-            <label for="Password2">ConfirmPassword</label>
-            <input type="password" id="Password2" placeholder="Enter Password  ">
-            <small>Error Message</small>
-        </div>
-        <button>Submit</button>
+            <h2>Sign Up</h2>
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password2">Confirm Password</label>
+                <input type="password" id="password2" placeholder="Enter password">
+                <small>Error message</small>
+            </div>
+            <button>Submit</button>
+            <input
+                class="backhome"
+                type="buttom"
+                value="Back to Home Page"
+                onclick="history.back()"
+             />   
         </form>
     </div>
-
-    <script src="script.js" ></script>
     
+    <script src="script.js"></script>
 </body>
 </html>
