@@ -34,13 +34,17 @@ function isVslidEmail(email){
      inputArray.forEach(function(input){
          if ( input.value === '' ) {
              console.log(input.id);
-             showError(input,`${input.id} is required`);
+             showError(input,`${getFieldid(input)} is required`);
          }
          else{
              showSuccess(input);
          }
      });
  }
+// Function to get the id of the input field with proper case
+function getFieldid(input){
+    return input.id.charAt(0).toUpperCase()+input.id.slice(1);
+}
 // Event Listeners
 // Create event listener for submit button
 form.addEventListener('submit', function(e) {
