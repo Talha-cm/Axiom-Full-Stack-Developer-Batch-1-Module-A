@@ -114,3 +114,27 @@ p.text {
 p.text span {
     color: black;
 }
+
+button {
+    cursor: pointer;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+button.reload {
+    cursor: pointer;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+}
