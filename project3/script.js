@@ -19,7 +19,7 @@ function updatePlayIcon() {
    if(video.paused) {
        play.innerHTML = '<i class="fas fa-play"></i>'
    } else {
-    play.innerHTML = '<i class="fas fa-pause"></i>'
+    play.innerHTML = '<i class="fas fa-pause"></i>' 
    }
 }
 
@@ -59,6 +59,7 @@ video.addEventListener('click', toggleVideoStatus);
 video.addEventListener('pause', updatePlayIcon);
 video.addEventListener('play', updatePlayIcon);
 video.addEventListener('timeupdate', updateProgress);
+
 
 // 2. Event listerner for Play Button
 play.addEventListener('click', toggleVideoStatus);
