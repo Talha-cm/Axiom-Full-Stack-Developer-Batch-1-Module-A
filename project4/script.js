@@ -22,9 +22,9 @@ function calculate() {
             // Update the DOM to display the conversion rate
             rate.innerText = `1 ${currencyOneCode} = ${conversionRate} ${currencyTwoCode}`;
             // Formatting Currency Two Amount
-                const amount2 = new Intl.NumberFormat('en-US', { style: 'currency', currency: currencyTwoCode }).format((amountCurrencyOne.value * conversionRate).toFixed(2));
+            const amount2 = new Intl.NumberFormat('en-US', { style: 'currency', currency: currencyTwoCode }).format((amountCurrencyOne.value * conversionRate).toFixed(2));
             // Updating DOM
-                amountCurrencyTwo.value = amount2;
+            amountCurrencyTwo.value = amount2;
         });
 };
 
@@ -47,7 +47,8 @@ swap.addEventListener('click', () => {
     currencyTwo.value = temp;
     // Recalculate exchange rate after swap
     calculate();
-});
+})
 
 // Execute calculate function on page load
 calculate();
+
